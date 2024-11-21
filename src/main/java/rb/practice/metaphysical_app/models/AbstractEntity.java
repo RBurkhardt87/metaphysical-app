@@ -1,5 +1,6 @@
 package rb.practice.metaphysical_app.models;
 
+
 public abstract class AbstractEntity {
 
     //TODO: Add @ID @GeneratedValue
@@ -8,6 +9,8 @@ public abstract class AbstractEntity {
 
     //TODO: Add validation to not be blank
     private String name;
+
+
 
     //TODO: Update constructor to be default(empty) when we start persistence
     public AbstractEntity() {

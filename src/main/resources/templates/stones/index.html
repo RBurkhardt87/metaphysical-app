@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head th:replace="~{fragments :: head}">
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+    <header th:replace="~{fragments :: header}"></header>
+    <div th:fragment="nav">
+        <ul>
+            <li style="float:right"><a class="active" th:href="@{/stones}">Stones</a></li>
+            <li><a th:href="@{/herbs}">Herbs</a></li>
+            <li><a th:href="@{/signs}">Zodiac Signs</a></li>
+            <li><a th:href="@{/elements}">Elements</a></li>
+            <li><a th:href="@{home}">Home</a></li>
+        </ul>
+    </div>
+    <p>Stones table will go here</p>
+
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td>Rose Quartz Test </td>
+        </tr>
+        <tr>
+            <th>Description:</th>
+            <td>For love and passion</td>
+        </tr>
+        <tr>
+            <th>Associated Zodiac Signs:</th>
+            <td>All signs</td>
+        </tr>
+        <tr>
+            <th>Associated Elements:</th>
+            <td>I don't know this</td>
+        </tr>
+        <tr>
+            <th>Properties:</th>
+            <td>Love, Passion, healing</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <!-- Trying to decide how I want to setup the table -->
+
+    <table>
+        <tr>
+            <th>Name:</th>
+            <th>Description:</th>
+            <th>Zodiac Signs:</th>
+            <th>Elements:</th>
+            <th>Properties:</th>
+        </tr>
+        <tr>
+            <td>Rose Quartz Test </td>
+            <td>For love and passion</td>
+            <td>All signs</td>
+            <td>I don't know this</td>
+            <td>Love, Passion, healing</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+<!-- This page will have a table that displays all the stones we have in database -->
+<!-- There will be navigation to: Add Stone as well as direct to Herbs, Zodiac, Elemental and Horoscopes -->

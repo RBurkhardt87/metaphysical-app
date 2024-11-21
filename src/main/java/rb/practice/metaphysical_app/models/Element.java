@@ -1,8 +1,12 @@
 package rb.practice.metaphysical_app.models;
 
 
+
+
 import java.util.ArrayList;
 import java.util.List;
+
+
 
 public enum Element {
 

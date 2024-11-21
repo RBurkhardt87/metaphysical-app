@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head th:replace="~{fragments :: head}">
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+    <header th:replace="~{fragments :: header}"></header>
+    <div th:fragment="nav">
+        <ul>
+            <li><a th:href="@{/stones}">Stones</a></li>
+            <li style="float:right"><a class="active" th:href="@{/herbs}">Herbs</a></li>
+            <li><a th:href="@{/signs}">Zodiac Signs</a></li>
+            <li><a th:href="@{/elements}">Elements</a></li>
+            <li><a th:href="@{/home}">Home</a></li>
+        </ul>
+    </div>
+    <p>Herbs table will go here</p>
+</body>
+</html>
