@@ -7,7 +7,7 @@
 </head>
 <body>
     <header th:replace="~{fragments :: header}"></header>
-    <div th:fragment="nav">
+    <div th:fragment="stone-Nav">
         <ul>
             <li style="float:right"><a class="active" th:href="@{/stones}">Stones</a></li>
             <li><a th:href="@{/herbs}">Herbs</a></li>
@@ -17,6 +17,12 @@
         </ul>
     </div>
     <p>Stones table will go here</p>
+
+       <div>
+            <button><a th:href="@{stones/add}">Add Stone</a></button>
+            <button><a th:href="@{stones/remove}">Remove Stone</a></button>
+            <button><a th:href="@{stones}">Stones Home</a></button>
+        </div>
 
     <table>
         <tr>
